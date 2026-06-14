@@ -1,0 +1,7 @@
+﻿services:
+  genshin:
+    image: genshin
+    build:
+      context: .
+      dockerfile: genshin/Dockerfile
+
