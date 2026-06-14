@@ -12,7 +12,7 @@ RUN dotnet restore "genshin/genshin.csproj"
 COPY . .
 WORKDIR "/src/genshin"
 RUN dotnet build "./genshin.csproj" -c $BUILD_CONFIGURATION -o /app/build
-s
+
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./genshin.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
