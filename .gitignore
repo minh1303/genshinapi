@@ -1,0 +1,19 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# IDE
+.idea/
+.junie/
+
+# Local databases
+**/*.db
+**/*.sqlite
+
+# Environment files
+.env
+*.env
+
+# Logs
+**/logs/
+**/*.log
